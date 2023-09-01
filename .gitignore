@@ -1,0 +1,4 @@
+## Files to Ignore from Commiting
+
+# API key file is ignored
+API key.md

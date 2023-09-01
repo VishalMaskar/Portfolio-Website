@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            Epic Google Map Project
+        </title>
+        <script src="js/store-data.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    </head>
+    <body>
+        <div class="title">Store Locator</div>
+        <div class="search-container">
+            <div class="search">
+                <input id="zip-code-input" type="text" placeholder="Enter Zip" />
+                <i class="fas fa-search-location" onclick="searchStores()"></i>
+
+            </div>
+        </div>
+
+        <div class="stores-list-container">
+            <div class="stores-list">
+                <div class="store-container">
+                    <div class="store-info-container">
+
+                        <div class="store-address">
+                            <span> Madyal, Kolhapur </span>
+                            <span>Mumbai, Maharashtra, 416218</span>
+                        </div>
+                        <div class="store-phone-number">
+                            9574343432
+                        </div>
+                    </div>
+                    <div class="store-number-container">
+
+                        <div class="store-number">
+                            1
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+
+        <div id="map" style="width:100%; height:100%;">
+
+        </div>
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-bzYPMq6RWuRqf2wnYC3sHNKUMdrB66c&callback=initMap">
+        </script>
+    </body>
+</html>
